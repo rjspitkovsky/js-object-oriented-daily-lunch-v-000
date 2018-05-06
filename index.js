@@ -9,6 +9,7 @@ class Customer {
   constructor(name, employer) {
     this.name = name
     this.id = ++customerId
+    this.employerId = employer.id
     store.customers.push(this)
   }
   meals() {
@@ -82,5 +83,8 @@ class Employer {
     this.id = ++employerId
     this.name = name
     store.employers.push(this)
+  }
+  employees() {
+    return store.
   }
 }
