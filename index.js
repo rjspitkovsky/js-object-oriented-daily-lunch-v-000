@@ -39,7 +39,7 @@ class Meal {
     this.id = ++mealId
     store.meals.push(this)
   }
-  static myPrice() {
+  static byPrice() {
     return store.meals.sort(function(a,b){return b.price - a.price})
   }
 }
