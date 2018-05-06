@@ -37,6 +37,7 @@ class Meal {
   }
 }
 
+let deliverId = 0
 class Delivery{
   constructor(meal, customer){
     this.id = ++deliveryId;
