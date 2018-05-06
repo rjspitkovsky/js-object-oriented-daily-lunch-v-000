@@ -10,7 +10,7 @@ class Customer {
   }
 }
 
-let store = {employers: [], customers: [], meals: [], deliveries: []}
+// let store = {employers: [], customers: [], meals: [], deliveries: []}
 
 //
 // let customerId = 0;
