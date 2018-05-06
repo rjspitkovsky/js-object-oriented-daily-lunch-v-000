@@ -102,4 +102,7 @@ class Employer {
     })
     return [... new Set(meals)]
   }
+  mealTotals() {
+
+  }
 }
