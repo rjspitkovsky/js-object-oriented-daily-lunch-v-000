@@ -36,3 +36,13 @@ class Meal {
     store.meals.push(this)
   }
 }
+
+let deliveryId = 0 
+class Delivery {
+  constructor(meal, customer) {
+    this.mealId = meal.id 
+    this.customerId = customer.id 
+    this.id = ++deliveryId 
+    store.deliveries.push(this)
+  }
+}
