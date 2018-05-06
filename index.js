@@ -105,7 +105,7 @@ class Employer {
   mealTotals() {
     let totals = {}
     this.meals().forEach(meal => {
-      let mealTotal = (meal.deliveries()).length + (employer.delieveries()).length
+      let mealTotal = (meal.deliveries()).length + (Employer.delieveries()).length
       totals[meal.id] = mealTotal
     })
     return totals
