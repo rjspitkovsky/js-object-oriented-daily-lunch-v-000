@@ -83,7 +83,7 @@ class Employer {
     this.name = name
     store.employers.push(this)
   }
-  employees() {
-    return store.
-  }
+  // employees() {
+  //   return store.
+  // }
 }
