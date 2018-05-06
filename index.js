@@ -40,9 +40,9 @@ class Meal {
 let deliveryId = 0
 class Delivery {
   constructor(meal, customer) {
+    this.id = ++deliveryId
     this.mealId = meal.id
     this.customerId = customer.id
-    this.id = ++deliveryId
     store.deliveries.push(this)
   }
   meal() {
