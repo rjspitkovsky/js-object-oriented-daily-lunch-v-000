@@ -33,7 +33,7 @@ describe('meals', function() {
   describe('creating a new meal', function() {
     describe('store', function() {
       it('can store meals', function() {
-        expect(store.meals).to.be.instanceof(Array);
+        expect(dailyDeli.meals).to.be.instanceof(Array);
       });
     });
 
