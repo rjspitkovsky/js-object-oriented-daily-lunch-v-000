@@ -23,6 +23,16 @@ class Customer {
     this.meals().forEach(function(meal){
       total += meal.price
     })
-    return total 
+    return total
+  }
+}
+
+let mealId = 0
+class Meal {
+  constructor(title, price) {
+    this.title = title
+    this.price = price
+    this.id = ++mealId
+    store.meals.push(this)
   }
 }
