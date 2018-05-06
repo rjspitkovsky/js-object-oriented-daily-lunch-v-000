@@ -13,7 +13,7 @@ class Customer {
   }
   meals() {
     return store.deliveries.map(delivery => {
-      return delivery.meals()
+      return delivery.meal()
     })
   }
   deliveries() {
