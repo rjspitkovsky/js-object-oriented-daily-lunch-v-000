@@ -22,7 +22,7 @@ class Customer {
     let total = 0
     this.meals().forEach(function(meal){
       total += meal.price
-      return total 
     })
+    return total 
   }
 }
