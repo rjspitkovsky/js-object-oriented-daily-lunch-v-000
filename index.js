@@ -106,23 +106,13 @@ class Employer {
     let mealsOrdered = this.deliveries().map(delivery => {
       return delivery.meal()
     })
-
     let totals = {}
     mealsOrdered.forEach(meal => {
       totals[meal.id] = 0
     })
-
     mealsOrdered.forEach(meal => {
       totals[meal.id] += 1
     })
-
-    return totals 
-
-    // let totals = {}
-    // this.meals().forEach(meal => {
-    //   let mealTotal = (meal.deliveries()).length + (this.deliveries()).length;
-    //   totals[meal.id] = mealTotal
-    // })
-    // return totals
+    return totals
   }
 }
