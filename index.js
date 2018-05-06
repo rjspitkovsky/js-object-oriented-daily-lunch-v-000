@@ -61,7 +61,7 @@ class Meal {
 // }
 
 // let deliveryId = 0
-class Delivery {
+class Delivery{
   constructor(meal, customer) {
     this.id = ++deliveryId
     if (meal){this.mealId = meal.id}
