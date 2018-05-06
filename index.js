@@ -21,9 +21,9 @@ class Customer {
       return delivery.customerId === this.id
     })
   }
-  let total = 0 
-  totalSpent() {
 
+  totalSpent() {
+    let total = 0
     this.meals().forEach(function(meal){
       total += meal.price
     })
