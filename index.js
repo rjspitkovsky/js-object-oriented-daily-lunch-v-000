@@ -103,6 +103,11 @@ class Employer {
     return [... new Set(meals)]
   }
   mealTotals() {
-
+    let totals = {}
+    this.meals().forEach(meal => {
+      let mealTotal = (meal.deliveries()).length + (this.delieveries()).length
+      totals[meal.id] = mealTotal
+    })
+    return totals
   }
 }
