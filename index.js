@@ -97,8 +97,9 @@ class Employer {
     })
   }
   meals() {
-    return store.deliveries.map(delivery => {
+    const meals = store.deliveries.map(delivery => {
       return delivery.meal()
     })
+    return [... new Set(meals)]
   }
 }
