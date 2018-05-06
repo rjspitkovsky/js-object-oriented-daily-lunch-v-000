@@ -3,7 +3,7 @@ let store = {employers: [], customers: [], meals: [], deliveries: []}
 let customerId = 0
 let deliveryId = 0
 let mealId = 0
-let employerId = 0 
+let employerId = 0
 
 class Customer {
   constructor(name, employer) {
@@ -21,8 +21,9 @@ class Customer {
       return delivery.customerId === this.id
     })
   }
+  let total = 0 
   totalSpent() {
-    let total = 0
+
     this.meals().forEach(function(meal){
       total += meal.price
     })
@@ -66,7 +67,7 @@ class Delivery{
 class Employer {
   constructor(name) {
     this.id = ++employerId
-    this.name = name 
+    this.name = name
     store.employers.push(this)
   }
 }
