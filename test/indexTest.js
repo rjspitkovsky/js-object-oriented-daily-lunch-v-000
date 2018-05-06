@@ -11,7 +11,7 @@ describe('deliveries', function() {
     it('adds the delivery to the store', function() {
       store.deliveries = [];
       let delivery = new Delivery();
-      expect(dailyDeli.deliveries[0]).to.be.instanceof(Delivery);
+      expect(store.deliveries[0]).to.be.instanceof(Delivery);
     });
 
     it('adds a numerical id to each delivery', function() {
