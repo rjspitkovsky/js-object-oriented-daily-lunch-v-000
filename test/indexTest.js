@@ -4,7 +4,7 @@ describe('deliveries', function() {
   describe('creating a new delivery', function() {
     describe('store', function() {
       it('can store drivers', function() {
-        expect(store.deliveries).to.be.instanceof(Array);
+        expect(dailyDeli.deliveries).to.be.instanceof(Array);
       });
     });
 
