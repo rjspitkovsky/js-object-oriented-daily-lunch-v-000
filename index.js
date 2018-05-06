@@ -39,6 +39,9 @@ class Meal {
     this.id = ++mealId
     store.meals.push(this)
   }
+  static.myPrice() {
+    store.meals.sort(function(a,b){return a.price - b.price})
+  }
 }
 
 class Delivery{
