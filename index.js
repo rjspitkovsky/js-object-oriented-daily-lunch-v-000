@@ -1,4 +1,4 @@
-let dailyDeli = {customers = [], meals = [], deliveries = [], employers =[]}
+let store = {customers = [], meals = [], deliveries = [], employers =[]}
 
 let customerId = 0
 
