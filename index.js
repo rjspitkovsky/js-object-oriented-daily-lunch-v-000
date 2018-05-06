@@ -45,7 +45,7 @@ class Meal {
     })
   }
   customers() {
-    return store.deliveries.filter(delivery => {
+    return store.deliveries.map(delivery => {
       return delivery.customer()
     })
   }
